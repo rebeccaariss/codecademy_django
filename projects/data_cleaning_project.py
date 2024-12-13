@@ -105,9 +105,9 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 ;,; green&white&blue   ;,; 09/15/17 , Myrtle Morris 
 ;,;   $22.66   ;,; green&white&blue;,;09/15/17"""
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 # Start coding below!
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # print(daily_sales)
@@ -118,7 +118,7 @@ daily_sales_replaced = daily_sales.replace(';,;', '|')
 # print(daily_sales_replaced)
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Split daily_sales entries using comma as a delimiter:
@@ -127,7 +127,7 @@ daily_transactions = daily_sales_replaced.split(',')
 # print(daily_transactions)
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Split data points for each sale in daily_transactions (each sale should have a list including name, color, total, and date):
@@ -140,7 +140,7 @@ for transaction in daily_transactions:
 # print(daily_transactions_split)
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Remove whitespace from individual entries by looping over transactions and then, in a nested loop, over a given transaction's data points:
@@ -156,7 +156,7 @@ for transaction in daily_transactions_split:
 # print(transactions_clean)
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Move data out of transactions_clean and into lists by category:
@@ -173,7 +173,7 @@ for transaction in transactions_clean:
 # print(f"{customers}\n\n{sales}\n\n{thread_sold}")
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Calculate total sales for the day:
@@ -185,7 +185,7 @@ for amt in sales:
 print(total_sales)
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Create a list comprised of individual thread colors, splitting entries such as 'white&blue' into 'white' and 'blue', for example:
@@ -202,7 +202,7 @@ for thread in thread_sold:
 # print(thread_sold_split)
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Create a function that takes 'color' as an argument and counts occurrences of that color in thread_sold_split:
@@ -217,7 +217,7 @@ def color_count(color):
 # print(color_count('white'))
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 
 # ✅ Using a list of all the colors sold in the store, print a summary of the day's sales in string format:
@@ -233,9 +233,9 @@ def sales_summary():
 sales_summary()
 
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
 
 # 🧵 "Thread Shed" project completed for Codecademy's "Learn Python 3" course:
 # https://www.codecademy.com/learn/learn-python-3
 
-#------------------------------------------------
+#------------------------------------------------------------------------------------------------
