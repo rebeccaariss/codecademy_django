@@ -7,8 +7,13 @@ player_to_words = {'player1': ['BLUE', 'TENNIS', 'EXIT'], 'wordNerd': ['EARTH', 
 # ✅ Initialize empty dictionary for scoring points:
 player_to_points = {}
 
-# ✅ TODO: Make the letter_to_points dictionary able to handle lowercase inputs as well:
+# ✅ Make the letter_to_points dictionary able to handle lowercase inputs as well:
 lowercase_letters = [letter.lower() for letter in letters]
+
+for letter in lowercase_letters:
+  letters.append(letter)
+
+points = [point for point in points * 2]
 
 # ✅ Combine the provided 'letters' and 'points' lists into a dictionary with letters mapped to their respective point values:
 letter_to_points = {key:value for key, value in zip(letters, points)}
@@ -55,7 +60,7 @@ play_word('player1', 'BLUE')
 print(f'\n{player_to_words}')
 print(player_to_points)
 
-play_word('player1', 'apple')
+play_word('player1', 'peach pie')
 print(f'\n{player_to_words}')
 print(player_to_points)
 
